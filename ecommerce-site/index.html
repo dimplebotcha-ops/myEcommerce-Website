@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mini E-Commerce</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>My Shop</h1>
+    <div class="cart">
+      🛒 Cart (<span id="cart-count">0</span>)
+    </div>
+  </header>
+
+  <main>
+    <div class="products">
+      <div class="product">
+        <img src="prodect1.jpg" alt="Study Table">
+        <h3>Study Table</h3>
+        <p>$10</p>
+        <button onclick="addToCart('Study Table', 10)">Add to Cart</button>
+      </div>
+
+      <div class="product">
+        <img src="prodect2.jpg" alt="Hot&Cold Water Bottle">
+        <h3>Hot&Cold Water Bottle</h3>
+        <p>$15</p>
+        <button onclick="addToCart('Hot&Cold Water Bottle', 15)">Add to Cart</button>
+      </div>
+
+      <div class="product">
+        <img src="prodect3.jpg" alt="Men's Formal Shoes">
+        <h3>Men's Formal Shoes</h3>
+        <p>$20</p>
+        <button onclick="addToCart('Men's Formal Shoes', 20)">Add to Cart</button>
+      </div>
+    </div>
+
+    <section class="cart-details">
+      <h2>Your Cart</h2>
+      <ul id="cart-items"></ul>
+      <p>Total: $<span id="total">0</span></p>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
